@@ -1815,3 +1815,11 @@ boost_library(
         ":xpressive",
     ],
 )
+
+boost_library(
+    name = "dll",
+    deps = [
+        ":config",
+        ":predef",
+    ]
+)
