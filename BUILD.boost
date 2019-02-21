@@ -1819,7 +1819,13 @@ boost_library(
 boost_library(
     name = "dll",
     deps = [
+        ":core",
         ":config",
+        ":cstdint",
+        ":filesystem",
         ":predef",
+        ":type_traits",
+        ":smart_ptr",
+        ":system",
     ]
 )
