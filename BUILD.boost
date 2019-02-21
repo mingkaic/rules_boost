@@ -1816,6 +1816,12 @@ boost_library(
     ],
 )
 
+filegroup(
+    name = "config_srcs",
+    srcs = hdr_list("version") + hdr_list("config"),
+    visibility = ["//visibility:public"],
+)
+
 boost_library(
     name = "dll",
     deps = [
